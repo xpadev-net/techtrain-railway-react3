@@ -6,7 +6,13 @@
   background-color: #242f9b;
   color: #ffffff;
   display: flex;
+  padding: 0 10px;
   justify-content: space-between;
+  h1{
+    line-height: 80px;
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .sign-out-button {

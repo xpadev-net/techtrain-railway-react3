@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Route, Routes, Navigate} from 'react-router-dom';
 import { Home } from '../pages/Home';
 import { NotFound } from '../pages/NotFound';
 import { SignIn } from '../pages/SignIn';
@@ -26,7 +26,7 @@ export function Router() {
             <Route path="/lists/:listId/tasks/:taskId" element={<EditTask />} />
             <Route path="/lists/:listId/edit" element={<EditList />} />
           </>
-        ) : ''}
+        ) : <Route path="*" element={<Navigate to="/signin" />} />}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

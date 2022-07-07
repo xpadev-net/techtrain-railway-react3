@@ -1,7 +1,9 @@
 .taskList {
   margin: 50px auto;
   list-style: none;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 10px;
 }
 
 .list-header {
