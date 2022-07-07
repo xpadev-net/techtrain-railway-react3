@@ -3,13 +3,12 @@ import axios from 'axios';
 import { useCookies } from 'react-cookie';
 import { Link, useNavigate } from 'react-router-dom';
 import { Header } from '../components/Header';
-import './signin.css';
+import './signin.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { signIn } from '../authSlice';
 import { url } from '../const';
 
 export function SignIn() {
-  console.log(import.meta.env);
   const auth = useSelector((state) => state.auth.isSignIn);
   const dispatch = useDispatch();
   const navigate = useNavigate();
