@@ -1,0 +1,42 @@
+{
+  "name": "techtrain-railway-react3",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "eslint": "eslint src/**/*.js*",
+    "eslint:fix": "eslint src/**/*.js* --fix",
+    "format": "prettier --write \"src/**/*.{js,json,css,scss}\"",
+    "lint": "npm run eslint",
+    "lint:fix": "npm run eslint:fix&&npm run format",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "axios": "^0.27.2",
+    "react": "^18.0.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.0.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "vite": "^2.9.9"
+  }
+}
