@@ -86,7 +86,7 @@ export function Home() {
                       onClick={() => handleSelectList(list.id)}
                       aria-selected={isActive}
                       role={"tab"}
-                      tabIndex={key}>
+                      tabIndex={0}>
                     {list.title}
                   </button>
                 </li>
